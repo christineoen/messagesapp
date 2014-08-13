@@ -1,0 +1,1 @@
+"use strict";angular.module("christineoen",["firebase"]),angular.module("christineoen").controller("MainCtrl",["$scope","$firebase",function(e,s){var a=new Firebase("https://chrisoen.firebaseio.com/data"),r=s(a);e.messages=r.$asArray(),e.addMessage=function(s){e.messages.$add({text:s})}}]);
